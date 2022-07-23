@@ -1,0 +1,44 @@
+<html>
+    <head>
+        </head>
+        <body>
+            <button onclick="fun()">click me</button>
+        <script type="text/javascript">
+           function fun()
+           {
+               var sum=0;
+               var i;
+               var j=0;
+               debugger;
+               for(i=1;i<=50;i++)
+               {
+                   num=i;
+                   j=0;
+                   while(num!=1)
+                   {
+                       n=num;
+                       j++;
+                       sum=0;
+                       while(n!=0)
+                       {
+                           rem=n%10;
+                           sum+=rem*rem;
+                           n=parseInt(n/10);
+                       }
+                       if(sum==1)
+                       {
+                           console.log("happy numbers"+i);
+                           
+                           break;
+                       }
+                       if(j==6)
+                       {
+                           break;
+                       }
+                       num=sum;
+                   }
+               }
+           }
+</script>
+            </body>
+            </html>
